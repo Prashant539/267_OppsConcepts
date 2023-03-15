@@ -1,5 +1,6 @@
 ﻿using OppsConcept.Abstraction;
 using OppsConcept.Encapsulation;
+using OppsConcept.Polymorphism;
 using System;
 namespace OppsConcept
 {
@@ -9,7 +10,7 @@ namespace OppsConcept
         {
             Console.WriteLine("Welcome to Opps Concept");
             Console.WriteLine("Enter the Options: ");
-            Console.WriteLine("1:Encapsulation\n2:Abstraction");
+            Console.WriteLine("1:Encapsulation\n2:Abstraction\n3:Inheritance");
             int options = Convert.ToInt32(Console.ReadLine());
             switch(options)
             {
@@ -31,6 +32,12 @@ namespace OppsConcept
                     p.Mul(10, 10);
                     p.Div(20, 10);
                     break;
+                case 3:
+                    Child child = new Child();
+                    child.Add(10, 20);
+                    child.Sub(20, 10);
+                    break;
+                
             }
         }
     }
