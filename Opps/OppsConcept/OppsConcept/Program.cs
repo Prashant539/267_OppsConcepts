@@ -10,7 +10,7 @@ namespace OppsConcept
         {
             Console.WriteLine("Welcome to Opps Concept");
             Console.WriteLine("Enter the Options: ");
-            Console.WriteLine("1:Encapsulation\n2:Abstraction\n3:Inheritance");
+            Console.WriteLine("1:Encapsulation\n2:Abstraction\n3:Inheritance\n4:Polymorphism");
             int options = Convert.ToInt32(Console.ReadLine());
             switch(options)
             {
@@ -36,6 +36,15 @@ namespace OppsConcept
                     Child child = new Child();
                     child.Add(10, 20);
                     child.Sub(20, 10);
+                    break;
+                case 4:
+                    MethodOverLoading methodOverLoading = new MethodOverLoading();
+                    methodOverLoading.Add(10, 20);
+                    methodOverLoading.Add(20.22, 23.34);
+                    methodOverLoading.Add("Prash", "ant");
+                    LoadChild loadChild = new LoadChild();
+                   // loadChild.Show();
+                    loadChild.Test();
                     break;
                 
             }
